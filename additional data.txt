@@ -1,0 +1,21 @@
+/*-------------------------------------------------------------*/
+
+/* *********************************************************** *
+ * Bluetooth Hardware setup requirements                       *
+ * System Clock                             :8MHz              *
+ * USART Baud Rate                          :9600              *
+ * USART Data Bits                          :8                 *
+ * USART Stop Bits                          :1                 *
+ * USART Mode                               :Asynchronous Mode *
+ * USART Parity                             :No Parity         *
+ * *********************************************************** */
+
+/*-------------------------------------------------------------*/
+
+To calculate BAUD Rate:
+	
+	BAUD = fosc / 16(UBRR + 1)
+	
+To calculate UBRR value:
+
+	UBRR = (fosc / 16BAUD) - 1
